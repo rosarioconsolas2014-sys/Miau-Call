@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "MIAU CALL – El llamador de gatitos",
+  "short_name": "MiauCall",
+  "description": "Llamador de gatos adorable con sonidos reales, animaciones kawaii y voces para tu celular Android.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFEBF2",
+  "theme_color": "#FFEBF2",
+  "icons": [
+    {
+      "src": "/cat-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/cat-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

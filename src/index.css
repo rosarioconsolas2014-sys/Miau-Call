@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  body {
+    font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-kawaii {
+    font-family: 'Fredoka', 'Quicksand', cursive, sans-serif;
+  }
+}
+
+/* Custom Soft Pastel Animations */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.1);
+  }
+  100% {
+    transform: translateY(-80px) scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes earWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes tailWag {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes pawWave {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-20deg);
+  }
+}
+
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes sleepZzz {
+  0% {
+    transform: translate(0, 0) scale(0.7);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.9;
+    transform: translate(10px, -15px) scale(1);
+  }
+  100% {
+    transform: translate(25px, -50px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes heartBurst {
+  0% {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) translateY(-30px);
+    opacity: 0;
+  }
+}
+
+.animate-float-up {
+  animation: floatUp 1.8s ease-out forwards;
+}
+
+.animate-ear-wiggle {
+  animation: earWiggle 2.5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-tail-wag {
+  animation: tailWag 2.2s ease-in-out infinite;
+  transform-origin: 20% 80%;
+}
+
+.animate-paw-wave {
+  animation: pawWave 0.7s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-gentle-bounce {
+  animation: gentleBounce 2.5s ease-in-out infinite;
+}
+
+.animate-sleep-zzz {
+  animation: sleepZzz 2.2s ease-out infinite;
+}
+
+/* Glass & Pastel Card Styling */
+.kawaii-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 25px -5px rgba(235, 140, 175, 0.15), 0 8px 10px -6px rgba(235, 140, 175, 0.1);
+}
+
+.kawaii-btn-shadow {
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.08), 0 10px 18px -4px rgba(220, 100, 150, 0.2);
+}
+
+.kawaii-btn-shadow:active {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08), 0 4px 8px -2px rgba(220, 100, 150, 0.2);
+  transform: translateY(4px);
+}

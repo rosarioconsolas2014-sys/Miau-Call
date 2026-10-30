@@ -1,0 +1,6 @@
+{
+  "name": "MIAU CALL - El llamador de gatitos",
+  "description": "Aplicación móvil adorable y divertida para llamar, mimar y comunicarte con tu michi con sonidos reales, animaciones kawaii interactivas y soporte Android.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
